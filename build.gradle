@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'SSB-SlimeWorldManager'
-version = "2024.1"
+version = "2024.3"
 
 project.ext {
     archiveFolder = file("archive/")
@@ -16,7 +16,7 @@ project.ext {
 
 allprojects {
     apply plugin: 'java'
-    apply plugin: 'io.github.goooler.shadow'
+    apply plugin: 'com.gradleup.shadow'
 
     java {
         toolchain {
@@ -33,7 +33,7 @@ allprojects {
     }
 
     dependencies {
-        compileOnly "com.bgsoftware:SuperiorSkyblockAPI:2024.2"
+        compileOnly "com.bgsoftware:SuperiorSkyblockAPI:2024.3"
     }
 
     task checkDebug() {
